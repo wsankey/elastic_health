@@ -32,4 +32,5 @@ gem 'elasticsearch', '~> 1.0.6'
 gem 'chewy', '~> 0.6.0'
 #Easy form handling
 gem 'simple_form', '~> 3.0.2'
-
+#Haml Gem
+gem 'haml', '~> 4.0.5'

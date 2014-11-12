@@ -1,6 +1,6 @@
 .main
   .text
-    %h1 Search for Violations
+    %h1 Documented Hospital Violations
     = form_for search_path, method: :get do |f|
       = f.label "Search here:"
       = text_field_tag :query, params[:query]
@@ -10,4 +10,5 @@
           %h3= hospital.name
           %h4= "Located in #{hospital.city}, #{hospital.state}"
           %p= hospital.complaint
+
 

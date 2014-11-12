@@ -1,22 +1,27 @@
 class HospitalController < ApplicationController
-  def name:string
+  def index
+    @hospital = Hospital.all
   end
 
-  def type:string
+  def show
+    @hospital = Hospital.find(params[:id])
   end
 
-  def id:string
+  def new
+
   end
 
-  def city:string
+  def create
+    @hospital = Hospital.new hospital_params
+    if @hospital.save
+      redirect_to @hospital
+    else
+      render 'new'
+    end
   end
+  private
 
-  def state:string
-  end
-
-  def def_desc:string
-  end
-
-  def complaint:string
+  def hospital_params
+    params.require(:hospital).permit :name, :type, :hosp_id, :city, :state, :def_desc, :complaint
   end
 end

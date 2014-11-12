@@ -1,0 +1,13 @@
+.main
+  .text
+    %h1 Search for Violations
+    = form_for search_path, method: :get do |f|
+      = f.label "Search here:"
+      = text_field_tag :query, params[:query]
+      = submit_tag "!", name: nil
+      - if @hospitals.any?
+        - @hospitals.each do |hospital|
+          %h3= hospital.name
+          %h4= "Located in #{hospital.city}, #{hospital.state}"
+          %p= hospital.complaint
+

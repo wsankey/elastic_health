@@ -22,6 +22,6 @@ class HospitalController < ApplicationController
   private
 
   def hospital_params
-    params.require(:hospital).permit :name, :type, :hosp_id, :city, :state, :def_desc, :complaint
+    params.require(:hospital).permit :name, :hosp_type, :city, :state, :def_desc, :complaint
   end
 end

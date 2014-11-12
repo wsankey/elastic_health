@@ -14,15 +14,12 @@
 ActiveRecord::Schema.define(version: 20141112023459) do
 
   create_table "hospitals", force: true do |t|
-    t.string   "name"
-    t.string   "type"
-    t.string   "hosp_id"
-    t.string   "city"
-    t.string   "state"
-    t.string   "def_desc"
-    t.string   "complaint"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "name"
+    t.string "type"
+    t.string "city"
+    t.string "state"
+    t.string "def_desc"
+    t.string "complaint"
   end
 
 end

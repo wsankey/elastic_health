@@ -26,11 +26,14 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-#Elasticsearch gem 
+#Elasticsearch gem
 gem 'elasticsearch', '~> 1.0.6'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 #Chewy for log handling
 gem 'chewy', '~> 0.6.0'
 #Easy form handling
 gem 'simple_form', '~> 3.0.2'
 #Haml Gem
 gem 'haml', '~> 4.0.5'
+gem 'bootstrap-sass', '~> 3.3.0.1'
